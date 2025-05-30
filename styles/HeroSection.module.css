@@ -1,0 +1,181 @@
+.heroSection {
+  margin-top: 140vh;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background: black;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.backgroundImage {
+  position: absolute;
+  inset: 0;
+  background-image: url("/calsaEdit.jpeg"); /* substitua pelo caminho correto */
+  background-size: cover;
+  background-position: center;
+  animation: MovieHero 25s linear infinite;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.gradientOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 241, 242, 0) 74%,
+    rgba(255, 241, 242, 1) 99%
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.title {
+  font-family: "Oooh Baby";
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(197 197 197);
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  display: block;
+  color: orange;
+}
+
+.description {
+  font-family: "inter";
+  font-size: 0.88rem;
+  font-weight: 200;
+  color: #ccc;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  width: 80%;
+}
+
+.versiculo {
+  font-family: "inter";
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: #ffffff;
+  margin-bottom: 6rem;
+  line-height: 1.6;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .buttons {
+    flex-direction: row;
+  }
+}
+
+.primaryButton {
+  background-color: orange;
+  color: black;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: darkorange;
+}
+
+.secondaryButton {
+  background: transparent;
+  color: orange;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  border: 2px solid orange;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondaryButton:hover {
+  background: orange;
+  color: black;
+}
+
+@keyframes MovieHero {
+  0% {
+    background-position-x: center;
+    background-position-y: center;
+    transform: scale(1);
+  }
+  50% {
+    background-position-x: -185px;
+    bbackground-position-y: 20px;
+    transform: scale(1.1);
+  }
+  100% {
+    background-position-x: center;
+    background-position-y: center;
+    transform: scale(1);
+  }
+}
+
+/* 
+.informationSection {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  width: 100vw;
+}
+.backgroundImageInformation {
+  position: absolute;
+  inset: 0;
+  background-image: url("/buque.jpg"); 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  z-index: 0;
+}
+
+.gradientOverlayInformation {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 241, 242, 1) 1%,
+    rgba(255, 241, 242, 0) 30%,
+    rgba(255, 241, 242, 0) 60%,
+    rgba(255, 241, 242, 1) 100%
+  );
+  z-index: 1;
+}
+
+.contentInformation {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 1rem;
+  text-align: center;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+} */

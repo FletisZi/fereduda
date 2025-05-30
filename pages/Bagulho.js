@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/teste_Home.module.css";
-
+import Slides from "../components/slide";
 
 export default function Bagulho() {
   return (

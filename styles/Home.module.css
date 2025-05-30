@@ -7,7 +7,7 @@
   transition: all 0.4s ease-in-out;
   font-family: "Georgia", serif;
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .envelope {
@@ -51,6 +51,5 @@
   }
   to {
     opacity: 1;
-    transform: scale(1);
   }
 }
