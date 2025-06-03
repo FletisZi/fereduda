@@ -8,7 +8,7 @@ export default function Hero() {
       <div className={styles.gradientOverlay} />
 
       <div className={styles.content}>
-        <h1 className={styles.title}>Eduarda & Felipe</h1>
+        {/* <h1 className={styles.title}>Eduarda & Felipe</h1> */}
         <p className={styles.description}>
           "Assim, eles já não são dois, mas sim uma <br /> só carne. Portanto, o
           que Deus uniu, ninguém o separe.”

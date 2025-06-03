@@ -6,11 +6,12 @@ export default function Invitation({ casalName }) {
   return (
     <section id="home" className={styles.invitationSection}>
       <div className={styles.descriptionInvitation}>
-        Com a bênção de Deus,
+        Com a bênção de Deus
+        <div className={styles.title}>{casalName}</div>
         <br />
-        Convidamos para o nosso casamento...
+        Convidam para o seu casamento
       </div>
-      <div className={styles.title}>{casalName}</div>
+
       <Slides />
     </section>
   );

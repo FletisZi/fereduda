@@ -24,7 +24,7 @@
 }
 
 .convite {
-  animation: fadeIn 1s ease;
+  animation: fadeIn 2.5s ease;
 }
 
 /* Use :global para elementos genéricos como h1, h2, p */

@@ -3,10 +3,9 @@ import { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
-import Bagulho from "./Bagulho";
-import Teste from "./Teste";
+import Home from "./Home";
 
-export default function Home() {
+export default function MyApp() {
   const [aberto, setAberto] = useState(false);
 
   return (
@@ -24,7 +23,7 @@ export default function Home() {
           </div>
         ) : (
           <div>
-            <Teste />
+            <Home />
           </div>
         )}
       </div>
