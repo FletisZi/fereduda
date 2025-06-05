@@ -123,8 +123,8 @@
     transform: scale(1);
   }
   50% {
-    background-position-x: -185px;
-    bbackground-position-y: 20px;
+    background-position-x: -90px;
+    background-position-y: 20px;
     transform: scale(1.1);
   }
   100% {
